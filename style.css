@@ -421,6 +421,16 @@ header nav a{
     .carousel .list .detail .specifications{
         overflow: auto;
     }
+    .carousel{
+        height: 90vh;
+    }
+    .carousel .list .item .introduce,
+    .carousel .list .item img{
+        margin-top: 5rem;
+    }
+    .carousel .list .item .detail{
+        margin-top: 3rem;
+    }
 }
 @media screen and (max-width:767px){
     /* ? Mobile*/
@@ -450,11 +460,16 @@ header nav a{
     }
     .carousel.showDetail .list .detail{
         height: 60vh;
+        margin-right: 0.5rem;
     }
     .carousel.showDetail .list .item .checkout {
         display: flex;
         width: max-content;
         float: right;
         margin-top: 1.5rem;
+    }
+    .carousel .list .item .introduce,
+    .carousel .list .item img{
+        margin-top: 1rem;
     }
 }
