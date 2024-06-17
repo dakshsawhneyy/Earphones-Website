@@ -19,7 +19,7 @@ const showSlider = (type) => {
     carousel.classList.remove('next', 'prev');
     let items = document.querySelectorAll('.carousel .list .item');
     if(type === 'next'){
-        listHTML.appendChild(items[0]);
+        listHTML.appendChild(items[0]); //item[0] because to move first element at last position when pressed next
         carousel.classList.add('next');
     }else{
         listHTML.prepend(items[items.length - 1]);
